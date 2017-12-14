@@ -1,0 +1,23 @@
+<h2>Listado de clientes</h2>
+
+<h3>{{$ctrl.mensaje}}</h3>
+<table class="table table-striped table-hover">
+	<tr>
+		<th>Nombre</th>
+		<th>Apellido</th>
+		<th>Edad</th>
+		<th>Categoria</th>
+	</tr>
+	<tr ng-repeat="persona in $ctrl.listado">
+		<td>{{persona.Nombre}}</td>
+		<td>{{persona.Apellido}}</td>
+		<td>{{persona.Edad}}</td>
+		<td>{{persona.Categoria.Nombre}}</td>
+
+	</tr>
+</table>
+
+<button ng-click="$ctrl.mostrarMensaje()" class="btn btn-primary">Cambiar Mensaje</button>
+
+
+{{$ctrl.token}}

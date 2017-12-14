@@ -1,0 +1,35 @@
+
+<form>
+<div class="row">
+	<div class="col-md-6 offset-md-3">
+<div class="form-group">
+    	<label for="exampleInputEmail1">Nombre</label>
+    	<input type="text" class="form-control" id="txtNombre"  placeholder="Ingrese un nombre" ng-model="$ctrl.nombre">
+	  </div>
+	
+	  <div class="form-group">
+    	<label for="exampleInputEmail1">Apellido</label>
+    	<input type="text" class="form-control" id="txtApellido"  placeholder="Ingrese un nombre" ng-model="$ctrl.apellido">
+	  </div>
+	<div class="form-group">
+    	<label for="exampleInputEmail1">Edad</label>
+    	<input type="text" class="form-control" id="txtEdad"  placeholder="Ingrese una edad" ng-model="$ctrl.edad">
+	  </div>
+	
+	  <button class="btn btn-secondary btn-sm">limpiar</button>
+	  <button class="btn btn-success" ng-click="$ctrl.agregar()">Guardar</button>
+		
+	  <div class="alert alert-success" role="alert" ng-if="$ctrl.added == true">
+  			{{$ctrl.mensaje}}
+	  </div>
+			
+	</div>
+	
+</form>	
+
+
+
+
+
+			
+
